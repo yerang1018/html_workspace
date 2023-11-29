@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.root {
+            width: 700px;
+            margin: auto;
+        }
+        p.target {
+            /* display: none; */
+            opacity: 0;
+            /* visibility: hidden; */
+            transition-duration: 0.2s;
+            height: 0;
+            overflow: hidden;
+        }
+        div.root > p:first-child:hover + p.target {
+            /* display: block; */
+            opacity: 1;
+            /* visibility: visible; */
+            transition-duration: 1s;
+            height: 63px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>display: none</h1>
+    <hr>
+
+    <h3>모습이 보이지 않음. 화면상의 자리 차지도 없음</h3>
+
+    <div class="root">
+        <p><button>숨김</button></p>
+        <p class="target">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tenetur, delectus non et dolores quo voluptatibus. Rem, consectetur optio, amet quasi quo maxime, ratione eum porro fugiat voluptates distinctio corrupti.
+        </p>
+        <p><img src="../짱구/수지.png" width="200px"></p>
+    </div>
+</body>
+</html>

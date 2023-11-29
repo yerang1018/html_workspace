@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div.box {
+            display: flex;
+            flex-flow: wrap;
+            border: 2px solid black;
+            width: 900px;
+            margin: auto;
+        }
+        div.item {
+            width: 150px;
+            height: 150px;
+            border: 1px solid grey;
+            text-align: center;
+            padding: 10px 0;
+            margin: 10px;
+            color: rgba(0, 0, 0, 0.556);
+            transition-duration: 0.5s;
+             /* 커서를 올렸을때 변화가 생기도록 하려면 
+            수치가 변화해야한다.   255 -> 243 이 되는 것처럼 */
+            background-color: rgb(255, 255, 255);
+            opacity: 0.3;       /* 투명도 */
+            
+        }
+        div.item:hover {
+            opacity: 1;
+            transition-duration: 0.5s;  
+            background-color: rgb(255, 243, 250);
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>flex를 활용한 여러 아이템 나열</h1>
+    <hr>
+
+    <div class="box">
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+        <div class="item">
+            <img src="../짱구/짱아.png" height="100">
+            <p><strong>짱아</strong></p>
+        </div>
+ 
+    </div>
+</body>
+</html>

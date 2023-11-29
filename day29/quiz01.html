@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.top {
+            width: 1800px;
+            height: 40px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+        div.top > div {
+            margin: 0 30px;
+        }
+        div.top > div.right {
+            margin: 20px;
+        }
+
+        div.top > div.right > span {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        div.middle {
+            text-align: center;
+        }
+
+        div.bottom > ul {
+            display: flex;
+            list-style: none;
+            cursor: pointer; 
+        }
+
+        ul > li {
+            color: dimgray;
+            margin: 10px;
+        }
+
+        ul > li:hover {
+            border-bottom: 1px solid dimgray;
+            cursor: pointer; 
+        }
+   
+        
+    </style>
+</head>
+<body>
+
+    <div class="top">
+
+        <div>
+        <p>
+        <a href="https://www.naver.com/">
+        <img src="../naver.png" width="120" >
+        </a>
+        </p>
+        </div>
+
+        <div class="right"> 
+        <span>카페홈</span>
+        <span>이웃</span>
+        <span>가입</span>
+        <span>새글</span>
+        <span>내소식</span>
+        <span>채팅</span>
+        <span>로그인</span>
+        <span>▦</span>
+        </div>
+    </div>  
+    
+    <div class="middle">
+        <img src="https://cafeptthumb-phinf.pstatic.net/MjAyMzA4MThfMjcy/MDAxNjkyMzMzODEyOTIz.vFH50d_VJS1dyq7AEQGjdwSzaE8rF3_hkZqhuEeuh1gg.1wLYJTbPMZsStALjmPmhyont_bL5I9Vyo_r7j4oJb2Ug.JPEG/%EC%BA%A0%ED%95%91%ED%8D%BC%EC%8A%A4%ED%8A%B8%EB%8C%80%EB%AC%B8.jpg" width="85%">
+    </div>
+    <br>
+    <hr>
+  
+    <div class="bottom">
+        <ul>
+        <li>전체글보기</li>
+        <li>인기글</li>
+        <li>이미지모아보기</li>
+        <li>카페태그보기</li>
+        <li>초캠 명예의 전당</li>
+        </ul>
+    </div>
+</body>
+</html>
