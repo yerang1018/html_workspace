@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.box {
+            width: 100%;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+        .frame {
+            width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+            font-size: 10px;
+        }
+        .flex {
+            display: flex;
+        }
+        .sb {
+            justify-content: space-between;
+        }
+        div.title > h1 {
+            padding-left: 50%;
+        }
+        .left {
+            justify-content: left;
+            
+        }
+        .right {
+            justify-content: right;
+        }
+        .left > li {
+            padding: 5px;
+        }
+        .right > li {
+            padding: 5px;
+        }
+        div.mid {
+            display: flex;
+        }
+        .midsb {
+            justify-content: space-between;
+        }
+        .list {
+            padding: 30px;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+        .photo {
+            padding-top: 20px;
+            width: 1200px;
+        }
+        .list > li {
+            display: inline;
+            margin: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="frame flex sb">
+            <div class="left" style="display: flex;">
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOINUS</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">ORDER</a></li>
+                <li><a href="#">MYPAGE</a></li>
+                <li><a href="#">BOOKMARK</a></li>
+            </div>
+            <div class="frame right" style="display: flex;">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">상품문의</a></li>
+                <li><a href="#">상품후기</a></li>
+            </div>
+            </div>
+            <div class="frame title">
+                <h1>D`ARLES</h1>
+            </div>
+            <div class="frame mid midsb">
+                <div class="icon">
+                    <img src="../짱구.png" width="20px">
+                    <img src="../짱아.png" width="20px">
+                    <img src="../유리.png" width="20px">
+                </div>
+                <div class="search">
+                    <input type="search">
+                </div>
+        </div>
+        <div class="frame list">
+            <li>▦</li>
+            <li>RONA Universe</li>
+            <li>남성의류</li>
+            <li>아우터</li>
+            <li>탑</li>
+            <li>드레스</li>
+            <li>바텀</li>
+            <li>악세사리</li>
+        </div>
+        <div class="frame photo">
+            <img src="https://darles.co.kr/web/upload/NNEditor/20210504/0bf1a699ea515735d0841f86daa11cc0.jpg">
+        </div>
+    </div>
+</body>
+</html>
