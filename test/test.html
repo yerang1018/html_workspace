@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .frame {
+        width: 1150px;
+        margin-left: 20%;
+      }
+      .flex {
+        display: flex;
+      }
+      .sb {
+        display: flex;
+        justify-content: space-between;
+      }
+      ul > li {
+        list-style: none;
+        padding-left: 0;
+      }
+      div.topRight {
+        width: 860px;
+      }
+      div.topLeft {
+        width: 287px;
+      }
+      div.topLeft > img {
+        width: 240px;
+        height: 50px;
+      }
+      div.miniLogo > img {
+        width: 19px;
+        height: 19px;
+        padding-right: 5px;
+      }
+      div.topLogin > p {
+        padding-left: 10px;
+      }
+      div.TopList > ul > li {
+        padding-right: 46px;
+      }
+      div.control {
+        margin-left: 54%;
+      }
+      div.whiteBox {
+        width: 500px;
+        height: 60px;
+        background-color: #f6f6f6;
+        justify-content: flex-end;
+      }
+      div.whiteBox > div.leftButton {
+        width: 60px;
+        height: 60px;
+        background-color: #008bce;
+        margin-right: 10px;
+      }
+      div.whiteBox > div.rightButton {
+        width: 60px;
+        height: 60px;
+        background-color: #008bce;
+      }
+      div.leftButton > h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        align-content: center;
+      }
+      div.rightButton > h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        align-items: center;
+      }
+      div.container {
+        padding: 30px 0;
+      }
+      div.containerLeft {
+        width: 760px;
+        border: 1px solid #dadada;
+      }
+      div.com > img {
+        width: 378px;
+        height: 190px;
+      }
+      div.detailText {
+        padding: 20px 0;
+      }
+      div.detailText > h4 {
+        font-size: 16px;
+        color: #1c99d1;
+      }
+      div.detailText > p {
+        font-size: 14px;
+        font-weight: lighter;
+      }
+      div.tabTitleLeft {
+        width: 186px;
+        height: 45px;
+        background-color: #ffe400;
+      }
+      div.tabTitleLeft > div > p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      div.tabTitleRight {
+        width: 186px;
+        height: 45px;
+        background-color: #d7d7d7;
+      }
+      div.tabTitleRight > div > p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .border1 {
+        border-bottom: 1px solid #dadada;
+      }
+      .text1 {
+        color: #535353;
+        font-weight: bold;
+        font-size: 13px;
+        padding-right: 10px;
+      }
+      .text2 {
+        color: #26b0b9;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .text3 {
+        color: #535353;
+        font-size: 13px;
+        font-weight: lighter;
+        padding-left: 10px;
+      }
+      .sp {
+        padding-right: 10px;
+      }
+      div.item > img {
+        width: 370px;
+        height: 200px;
+        flex: 1;
+      }
+      div.item > img.centerImg {
+        padding: 0 15px;
+      }
+      div.rightBox {
+        width: 186px;
+        height: 45px;
+        background-color: white;
+      }
+      div.slide {
+        padding: 30px 0;
+      }
+    
+      .space {
+        padding: 0 20px;
+      }
+      div.bottom1 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+      div.bottom2 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+      div.footer > img {
+        padding: 0 10px;
+      }
+      div.blackBox {
+        background-color: black;
+        padding: 20px 0;
+      }
+      div.footer {
+        padding-bottom: 20px;
+      }
+      div.footerLeft > p {
+        color: white;
+      }
+      .Text4 {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .Text5 {
+        color: #dadada;
+        font-size: 17px;
+    
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="frame flex top">
+        <div class="topLeft">
+          <img src="플레이웨어즈 로고.png" width="250px" />
+        </div>
+
+        <div class="topRight">
+          <div class="sb topToTop">
+            <div class="flex miniLogo">
+              <img src="상단 1번째.png" width="19px" height="19px" />
+              <img src="상단 2번째.png" />
+              <img src="상단 3번째.png" />
+              <img src="상단 4번째.png" />
+            </div>
+            <div class="flex topLogin">
+              <p>로그인</p>
+              <p>회원가입</p>
+              <p><input type="search" placeholder="검색" /></p>
+            </div>
+          </div>
+
+          <div class="topToBottom">
+            <div class="TopList">
+              <ul class="flex">
+                <li>이벤트</li>
+                <li>공지</li>
+                <li>메인리뷰</li>
+                <li>회원리뷰</li>
+                <li>소식</li>
+                <li>게임</li>
+                <li>커뮤니티</li>
+                <li>장터</li>
+                <li>특가</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame title">
+        <img src="타이틀.jpg" />
+      </div>
+
+      <div class="frame control">
+        <div class="flex whiteBox">
+          <div class="leftButton">
+            <h3><</h3>
+          </div>
+          <div class="rightButton">
+            <h3>></h3>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="frame sb container">
+        <div class="flex containerLeft">
+          <div class="com">
+            <img src="컨테이너 왼쪽 이미지.jpg" />
+          </div>
+          <div class="detailText">
+            <h4 class="Text">GIGABYTE GeForce RTX 4070 EAGLE OC D6X 1...</h4>
+            <p>
+              NVIDIA Geforce RTX 4000시리즈의 막내(60, 50 시리즈가 나 <br />
+              오기 전까지는) RTX 4070이 출시되었습니다. 직전 출시된 RTX<br />
+              4070 Ti와 동일한 192bit에 12GB메모리를 탑재하고 있지만,
+            </p>
+          </div>
+        </div>
+
+        <div class="containerRight">
+          <div class="flex">
+            <div class="sb tabTitleLeft">
+              <div>
+                <p>이벤트 & 특가</p>
+              </div>
+              <div>
+                <p>+</p>
+              </div>
+            </div>
+            <div class="sb tabTitleRight">
+              <div>
+                <p>플웨즈 공지</p>
+              </div>
+              <div>
+                <p>+</p>
+              </div>
+            </div>
+          </div>
+          <div class="detailList">
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">WD_BLACK AN1500 SSD</p>
+              <p class="text2">29</p>
+              <p class="text3">2020-12-23</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">씨게이트 바라쿠다 2TB 최저</p>
+              <p class="text2">815</p>
+              <p class="text3">2018-11-21</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">컬러풀 삼행시 짓고 LOL결</p>
+              <p class="text2">11</p>
+              <p class="text3">2018-10-23</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">(재선정)씨게이트 14TB</p>
+              <p class="text2">159</p>
+              <p class="text3">2018-10-19</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">컬러풀 CN600S SSD</p>
+              <p class="text2">78</p>
+              <p class="text3">2018-10-16</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex frame item">
+        <img src="아이템 왼쪽.jpg" />
+        <img class="centerImg" src="아이템 가운데.jpg" />
+        <img src="아이템 오른쪽.jpg" />
+      </div>
+
+      <div class="frame sb slide">
+        <div class="flex containerLeft">
+          <div class="detailText">
+            <h4>GIGABYTE GeForce RTX 4070 EAGLE OC D6X 1...</h4>
+            <p>
+              NVIDIA Geforce RTX 4000시리즈의 막내(60, 50 시리즈가 나 <br />
+              오기 전까지는) RTX 4070이 출시되었습니다. 직전 출시된 RTX<br />
+              4070 Ti와 동일한 192bit에 12GB메모리를 탑재하고 있지만,
+            </p>
+          </div>
+          <div class="com">
+            <img src="컨테이너 왼쪽 이미지.jpg" />
+          </div>
+        </div>
+        <div class="containerRight">
+          <div class="flex">
+            <div class="sb tabTitleLeft">
+              <div>
+                <p>H/W 견적</p>
+              </div>
+              <div>
+                <p>+</p>
+              </div>
+            </div>
+            <div class="sb rightBox"></div>
+          </div>
+          <div class="detailList">
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">메인컴퓨터 구입 및 견적 문</p>
+              <p class="text3">2023-04-07</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">요즘 완제품이 더 싼 것 같네</p>
+              <p class="text2">1</p>
+              <p class="text3">2021-04-19</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">고수님들 도와주세요ㅠ 컴맹</p>
+              <p class="text3">2021-02-06</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">견적 봐주시면 감사하겠습니</p>
+              <p class="text2">2</p>
+              <p class="text3">2021-01-03</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text1">가볍게 구성을 한 번 해보았</p>
+              <p class="text3">2020--09-18</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex frame bottom1">
+        <div class="containerRight">
+          <div class="flex">
+            <div class="sb tabTitleLeft">
+              <div>
+                <p>H/W게시판</p>
+              </div>
+              
+            </div>
+            <div class="sb tabTitleLeft">
+                <div>
+                    <p>+</p>
+                </div>
+            </div>
+          </div>
+          <div class="detailList">
+            <span class="flex border1">
+
+              <p class="text3">AMD 시스템에 사용하는 그래픽카...</p>
+              <p class="text3">2023-07-04</p>
+            </span>
+            <span class="flex border1">
+
+              <p class="text3">채굴 용도로 사용하던 사파이어 라...</p>
+              <p class="text3">2023-03-18</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">이번 AMD 라이젠 라파엘 출시로 P...</p>
+              <p class="text3">2022-09-28</p>
+            </span>
+            <span class="flex border1">
+             
+              <p class="text3">5년 만에 그래픽카드를 MSI 지포스 ...</p>
+              <p class="text3">2022-06-01</p>
+            </span>
+            <span class="flex border1">
+            
+              <p class="text3">PCle4.0의 미친 속도 씨게이트 파이...</p>
+              <p class="text3">2021-08-30</p>
+            </span>
+          </div>
+        </div>
+        <div class="space containerRight">
+          <div class="flex">
+            <div class="sb tabTitleLeft">
+              <div>
+                <p>인기 회원리뷰</p>
+              </div>
+              <div>
+                <p>+</p>
+              </div>
+            </div>
+            <div class="sb tabTitleRight">
+              <div>
+                <p>회원리뷰</p>
+              </div>
+              <div>
+                <p>+</p>
+              </div>
+            </div>
+          </div>
+          <div class="detailList">
+            <span class="flex">
+              <div><p><img src="컨테이너 안 이미지.jpg" width="130px" height="90px"></p></div>
+              <div>
+                <p class="text3">Dr.MOS 전원부 바이오...</p>
+                
+                <p class="text3">제이씨현에서 새롭게 선보이는 <br>
+                                바이오스타  Dr.Mos(드라이</p>
+                <p class="text3">2023-12-12</p>
+                </div>
+            </span>
+            <span class="flex">
+                <div><p><img src="컨테이너 안 이미지 밑.jpg" width="130px" height="90px"></p></div>
+                <div>
+                  <p class="text3">스트림덱 플러스 초보...</p>
+                  
+                  <p class="text3">00:00 개봉 01:43 설치 02:14 <br>
+                                  전력소비 02:32 시야각 02:49 프</p>
+                  <p class="text3">2023-12-12</p>
+                  </div>
+              </span>
+            
+          </div>
+        </div>
+        <div class="containerRight">
+            <div class="flex">
+              <div class="sb tabTitleLeft">
+                <div>
+                  <p>H/W 갤러리</p>
+                </div>
+                <div>
+                  <p>+</p>
+                </div>
+              </div>
+              <div class="sb tabTitleRight">
+                <div>
+                  <p>자유갤러리</p>
+                </div>
+                <div>
+                  <p>+</p>
+                </div>
+              </div>
+            </div>
+            <div class="detailList">
+              <span class="flex">
+                <div><p><img src="컨테이너 안 오른쪽 이미지 위.jpg" width="130px" height="90px"></p></div>
+                <div>
+                  <p class="text3">외장 SSD 추천 씨게이트 ...</p>
+                  
+                  <p class="text3">디지털 콘텐츠의 생산과 사용이 일 <br>
+                                  상화된 현대를 살아가는 사람들에</p>
+                  <p class="text3">2022-06-19</p>
+                  </div>
+              </span>
+              <span class="flex">
+                  <div><p><img src="컨테이너 안 오른쪽 이미지 아래.jpg" width="130px" height="90px"></p></div>
+                  <div>
+                    <p class="text3">에이픽스 GC001 울프 ...</p>
+                    
+                    <p class="text3">제가 써본 게이밍의자중에 쵝오!!
+                                    </p>
+                    <p class="text3">2021-11-29</p>
+                    </div>
+                </span>
+              
+            </div>
+          </div>
+      </div>
+
+      <div class="flex frame bottom2">
+        <div class="containerRight">
+          <div class="flex">
+            <div class="sb tabTitleLeft">
+                <div>
+                  <p>게임게시판</p>
+                </div>
+                
+              </div>
+              <div class="sb tabTitleLeft">
+                  <div>
+                      <p>+</p>
+                  </div>
+              </div>
+
+          </div>
+          <div class="detailList">
+            <span class="flex border1">
+              
+              <p class="text3">클래시로얄 연전연승 달리는 중</p>
+             
+              <p class="text3">2023-12-23</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">네이버 치지직 선구자로 따효니?</p>
+              <p class="text2">1</p>
+              <p class="text3">2023-12-08</p>
+            </span>
+            <span class="flex border1">
+             
+              <p class="text3">오랜만에 꿀잼게임 히어로랜드</p>
+              
+              <p class="text3">2023-11-25</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">환세취호전 플러스 한정판 추가 판...</p>
+             
+              <p class="text3">2023-11-23</p>
+            </span>
+            <span class="flex border1">
+             
+              <p class="text3">엔씨 프로젝트G 대박이네요</p>
+              
+              <p class="text3">2023-11-17</p>
+            </span>
+          </div>
+        </div>
+        <div class="space containerRight">
+            <div class="flex">
+                <div class="sb tabTitleLeft">
+                    <div>
+                      <p>자유게시판</p>
+                    </div>
+                    
+                  </div>
+                  <div class="sb tabTitleLeft">
+                      <div>
+                          <p>+</p>
+                      </div>
+                  </div>
+    
+              </div>
+          <div class="detailList">
+            <span class="flex border1">
+             
+              <p class="text3">휘슬 자동차 검사 서비스 시작</p>
+            
+              <p class="text3">2023-12-18</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">이제 연말이 얼마 남지 않았네요</p>
+              <p class="text2">1</p>
+              <p class="text3">2023-12-15</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">휘슬 사용 후기(꿀팁공유)</p>
+              
+              <p class="text3">2023-12-14</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">오랜만에 왔네요</p>
+              <p class="text2">2</p>
+              <p class="text3">2023-12-13</p>
+            </span>
+            <span class="flex border1">
+              <p class="sp text3">></p>
+              <p class="text3">게임 스콘</p>
+             
+              <p class="text3">2023-12-01</p>
+            </span>
+          </div>
+        </div>
+        <div class="containerRight">
+            <div class="flex">
+                <div class="sb tabTitleLeft">
+                    <div>
+                      <p>종합 QnA</p>
+                    </div>
+                    
+                  </div>
+                  <div class="sb tabTitleLeft">
+                      <div>
+                          <p>+</p>
+                      </div>
+                  </div>
+    
+              </div>
+          <div class="detailList">
+            <span class="flex border1">
+              
+              <p class="text3">모니터 화면이 나오지 않습니다.</p>
+              <p class="text2">1</p>
+              <p class="text3">2023-09-02</p>
+            </span>
+            <span class="flex border1">
+           
+              <p class="text3">기가바이트 어로스 FI27Q 모니터...</p>
+            
+              <p class="text3">2023-04-25</p>
+            </span>
+            <span class="flex border1">
+          
+              <p class="text3">asus z170 maximus viii formula 갑...</p>
+              
+              <p class="text3">2022-09-11</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">사운드바에서 화이트노이즈 같은게 ...</p>
+              <p class="text2">1</p>
+              <p class="text3">2021-12-09</p>
+            </span>
+            <span class="flex border1">
+              
+              <p class="text3">USB3.1(구USB3.0과 SATA3 케이블 ...</p>
+             
+              <p class="text3">2021-12-09</p>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="frame flex footer">
+        <img src="하단 1.jpg">
+        <img src="하단 2.jpg">
+        <img src="하단 3.jpg">
+        <img src="하단 4.jpg">
+        <img src="하단 5.jpg">
+        <img src="하단 6.jpg">
+       </div>
+
+       <div class="blackBox">
+        <div class="flex">
+        <div class="frame footerLeft">
+        <p class="Text4">플레이웨어즈</p>
+        <p class="Text5">대표 : 박성진<br>
+
+            Copyright 2015 PLAYWARES. <br>
+            All rights reserved.</p>
+        </div>
+
+        <div class="frame footerCenter">
+            <p class="Text4">CONTACT US</p>
+            <p class="Text5">이메일 <br> 
+                주소 : 서울시 금천구 가산디지털 1로 STX-V타워 
+                <br>
+                704호
+                
+            </p>
+        </div>
+        <div class="frame footerRight">
+            <p class="Text4">INFORMATION</p>
+            <p class="Text5">요청/건의<br>
+                개인정보취급방침<br>
+                광고/제휴 문의
+            </p>
+        </div>
+    </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
